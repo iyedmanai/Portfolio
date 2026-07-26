@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Iyed Manai — Développeur Web</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Iyed Manai - Developpeur Web</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,500&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,12 +12,12 @@
 
 <header>
   <nav class="wrap">
-    <div class="logo">iyed<span>.</span>manai</div>
+    <div class="logo">Manai<span>.</div>
     <ul id="navlist">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#about">A propos</a></li>
+      <li><a href="#skills">Competences</a></li>
       <li><a href="#projects">Projets</a></li>
-      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -28,8 +27,8 @@
 <section class="hero">
   <div class="hero-blob"></div>
   <div class="wrap">
-    <span class="eyebrow">Jendouba, Tunisie · Disponible pour un stage PFE</span>
-    <h1>Iyed Manai<br><span class="accent">développe</span> des interfaces qui vont bien.</h1>
+    <span class="eyebrow">Jendouba, Tunisie </span>
+    <h1>Iyed Manai<br><span class="accent">Développeur</span> en devenir, ISET Jendouba.</h1>
     <p class="lead">Étudiant en Licence Développement des Systèmes d'Information à l'ISET de Jendouba. Je construis des sites web sur mesure — du back-end à l'interface — avec la précision d'un artisan et le goût du détail.</p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">Voir mes projets →</a>
@@ -156,23 +155,6 @@
 </section>
 
 <footer>© 2026 Iyed Manai — Conçu avec soin, ligne par ligne.</footer>
-
-<script>
-  const navToggle = document.getElementById('navToggle');
-  const navList = document.getElementById('navlist');
-  navToggle.addEventListener('click', () => navList.classList.toggle('open'));
-  navList.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navList.classList.remove('open')));
-
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-</script>
 
 </body>
 </html>
